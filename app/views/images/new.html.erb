@@ -1,0 +1,4 @@
+<%= direct_upload_form_for @uploader, html: {class: 'well'} do |f| %>
+	<%= f.file_field :image %>
+	<%= f.submit("Upload image") %>
+<%- end -%>

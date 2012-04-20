@@ -1,0 +1,9 @@
+<%= render partial: "/errors", locals: {model: @post} %>
+<%= simple_form_for([@post], html: {class: 'well'}) do |f| %>
+
+  <%= f.input :title %>
+	<%= f.hidden_field :key %>
+	
+	<%= f.submit("Add post") %>
+
+<% end %>
